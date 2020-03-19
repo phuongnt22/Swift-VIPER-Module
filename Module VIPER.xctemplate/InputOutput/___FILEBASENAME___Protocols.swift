@@ -8,17 +8,17 @@
 
 import Foundation
 
-//MARK: Router -
+//MARK: Router Protocol
 protocol ___VARIABLE_productName:identifier___RouterProtocol: class {
 
 }
-//MARK: Presenter -
+//MARK: Presenter Protocol
 protocol ___VARIABLE_productName:identifier___PresenterProtocol: class {
 
     var interactor: ___VARIABLE_productName:identifier___InteractorInputProtocol? { get set }
 }
 
-//MARK: Interactor -
+//MARK: Interactor Protocol
 protocol ___VARIABLE_productName:identifier___InteractorOutputProtocol: class {
 
     /* Interactor -> Presenter */
@@ -31,7 +31,7 @@ protocol ___VARIABLE_productName:identifier___InteractorInputProtocol: class {
     /* Presenter -> Interactor */
 }
 
-//MARK: View -
+//MARK: View Protocol
 protocol ___VARIABLE_productName:identifier___ViewProtocol: class {
 
     var presenter: ___VARIABLE_productName:identifier___PresenterProtocol?  { get set }
