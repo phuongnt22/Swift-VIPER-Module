@@ -2,8 +2,8 @@
 
 **Protocols**
 ```swift
-//MARK: Wireframe -
-protocol LoginWireframeProtocol: class {
+//MARK: Router -
+protocol LoginRouterProtocol: class {
 
 }
 //MARK: Presenter -
@@ -48,9 +48,9 @@ class LoginPresenter: LoginPresenterProtocol, LoginInteractorOutputProtocol {
 
     weak private var view: LoginViewProtocol?
     var interactor: LoginInteractorInputProtocol?
-    private let router: LoginWireframeProtocol
+    private let router: LoginRouterProtocol
 
-    init(interface: LoginViewProtocol, interactor: LoginInteractorInputProtocol?, router: LoginWireframeProtocol) {
+    init(interface: LoginViewProtocol, interactor: LoginInteractorInputProtocol?, router: LoginRouterProtocol) {
         self.view = interface
         self.interactor = interactor
         self.router = router
@@ -58,9 +58,9 @@ class LoginPresenter: LoginPresenterProtocol, LoginInteractorOutputProtocol {
 }
 ```
 
-**Wireframe**
+**Router**
 ```swift
-class LoginRouter: LoginWireframeProtocol {
+class LoginRouter: LoginRouterProtocol {
 
     weak var viewController: UIViewController?
 
