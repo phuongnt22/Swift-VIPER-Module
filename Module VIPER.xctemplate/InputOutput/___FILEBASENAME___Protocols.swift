@@ -24,7 +24,7 @@ protocol ___VARIABLE_productName:identifier___PresenterProtocol: class, ___VARIA
     var inputs: ___VARIABLE_productName:identifier___PresenterInputsProtocol { get } 
     var outputs: ___VARIABLE_productName:identifier___PresenterOutputsProtocol { get }
 
-    var interactor: ___VARIABLE_productName:identifier___InteractorInputProtocol? { get set }
+    var interactor: ___VARIABLE_productName:identifier___InteractorProtocol? { get set }
 }
 
 extension ___VARIABLE_productName:identifier___PresenterProtocol {
